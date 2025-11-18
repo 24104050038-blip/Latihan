@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!doctype html&gt;</p>
+<p class="p1">&lt;html lang="id"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
+<p class="p1">&lt;title&gt;Website Kinematika Gerak&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">:root{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--bg:#ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text:#1e293b;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--card:#f1f5f9;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--accent:#0ea5e9;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--dot:#f59e0b;</p>
+<p class="p1">}</p>
+<p class="p1">[data-theme="dark"]{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--bg:#0f172a;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text:#e2e8f0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--card:#1e293b;</p>
+<p class="p1">}</p>
+<p class="p1">body{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family:Arial, Helvetica, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--bg);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--text);</p>
+<p class="p1">}</p>
+<p class="p1">header{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:15px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:24px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:bold;</p>
+<p class="p1">}</p>
+<p class="p1">nav{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap:10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:10px 15px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--card);</p>
+<p class="p1">}</p>
+<p class="p1">nav button{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:8px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius:6px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor:pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#e2e8f0;</p>
+<p class="p1">}</p>
+<p class="p1">nav button.active{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:white;</p>
+<p class="p1">}</p>
+<p class="p1">#themeBtn{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-left:auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#64748b;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:white;</p>
+<p class="p1">}</p>
+<p class="p1">.card{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius:12px;</p>
+<p class="p1">}</p>
+<p class="p1">h2{margin-top:0;}</p>
+<p class="p1">.sim{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height:220px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:1px solid #94a3b8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#cbd5e1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top:10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius:10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p1">}</p>
+<p class="p1">.dot{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width:20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height:20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--dot);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius:50%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top:50%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform:translateY(-50%);</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body data-theme="light"&gt;</p>
+<p class="p1">&lt;header&gt;Website Kinematika Gerak&lt;/header&gt;</p>
+<p class="p1">&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="loadPage('glb')" id="btn_glb"&gt;Gerak Lurus Beraturan&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="loadPage('glbb')" id="btn_glbb"&gt;Gerak Lurus Berubah Beraturan&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="loadPage('parabola')" id="btn_parabola"&gt;Gerak Parabola&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button id="themeBtn" onclick="toggleTheme()"&gt;Gelap&lt;/button&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;div id="content"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">function setActive(btn){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.querySelectorAll('nav button').forEach(b=&gt;b.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>btn.classList.add('active');</p>
+<p class="p1">}</p>
+<p class="p1">function toggleTheme(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const body=document.body;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const btn=document.getElementById('themeBtn');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(body.dataset.theme==='light'){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body.dataset.theme='dark';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.textContent='Terang';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body.dataset.theme='light';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.textContent='Gelap';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p1">function loadPage(page){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>setActive(document.getElementById('btn_'+page));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(page==='glb') return loadGLB();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(page==='glbb') return loadGLBB();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(page==='parabola') return loadParabola();</p>
+<p class="p1">}</p>
+<p class="p1">function loadGLB(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content.innerHTML=`</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class='card'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Gerak Lurus Beraturan (GLB)&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Apersepsi&lt;/h3&gt;&lt;p&gt;Gerak dengan kecepatan konstan pada lintasan lurus.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Pengertian&lt;/h3&gt;&lt;p&gt;a = 0 sehingga posisi berubah linear terhadap waktu.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Rumus&lt;/h3&gt;&lt;p&gt;x(t) = x₀ + v·t&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Contoh Soal&lt;/h3&gt;&lt;p&gt;Benda bergerak v=4 m/s dari x₀=1 m. Hitung posisi setelah 6 s.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Simulasi&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;x₀&lt;/label&gt;&lt;input id='x0' type='number' value='0'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;v&lt;/label&gt;&lt;input id='v' type='number' value='3'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;Batas t&lt;/label&gt;&lt;input id='tmax' type='number' value='10'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick='runGLB()'&gt;Mulai&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class='sim'&gt;&lt;div class='dot' id='dot'&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;`;</p>
+<p class="p1">}</p>
+<p class="p1">function runGLB(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let t=0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const x0=parseFloat(document.getElementById('x0').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const v=parseFloat(document.getElementById('v').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const tmax=parseFloat(document.getElementById('tmax').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const dot=document.getElementById('dot');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function loop(){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>t+=0.02;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const x=x0+v*t;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>dot.style.left=(x*5)+'px';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(t&lt;tmax) requestAnimationFrame(loop);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>loop();</p>
+<p class="p1">}</p>
+<p class="p1">function loadGLBB(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content.innerHTML=`</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class='card'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Gerak Lurus Berubah Beraturan (GLBB)&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Apersepsi&lt;/h3&gt;&lt;p&gt;Kecepatan berubah teratur karena percepatan tetap.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Pengertian&lt;/h3&gt;&lt;p&gt;v(t)=v₀+at dan x(t)=x₀+v₀t+½at².&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Rumus&lt;/h3&gt;&lt;p&gt;x(t)=x₀+v₀t+½at²&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Contoh Soal&lt;/h3&gt;&lt;p&gt;x₀=1, v₀=4, a=2 → x(3)=22 m.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Simulasi&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;x₀&lt;/label&gt;&lt;input id='x0b' type='number' value='0'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;v₀&lt;/label&gt;&lt;input id='v0b' type='number' value='2'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;a&lt;/label&gt;&lt;input id='ab' type='number' value='1'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;Batas t&lt;/label&gt;&lt;input id='tmaxb' type='number' value='10'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick='runGLBB()'&gt;Mulai&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class='sim'&gt;&lt;div class='dot' id='dotb'&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;`;</p>
+<p class="p1">}</p>
+<p class="p1">function runGLBB(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let t=0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const x0=parseFloat(document.getElementById('x0b').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const v0=parseFloat(document.getElementById('v0b').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const a=parseFloat(document.getElementById('ab').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const tmax=parseFloat(document.getElementById('tmaxb').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const dot=document.getElementById('dotb');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function loop(){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>t+=0.02;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const x=x0+v0*t+0.5*a*t*t;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>dot.style.left=(x*5)+'px';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(t&lt;tmax) requestAnimationFrame(loop);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>loop();</p>
+<p class="p1">}</p>
+<p class="p1">function loadParabola(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content.innerHTML=`</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class='card'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Gerak Parabola&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Apersepsi&lt;/h3&gt;&lt;p&gt;Gabungan GLB pada sumbu x dan GLBB pada sumbu y.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Pengertian&lt;/h3&gt;&lt;p&gt;Lintasan parabola dibentuk dari gaya gravitasi.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Rumus&lt;/h3&gt;&lt;p&gt;x=v₀ cosθ · t&lt;br&gt;y=v₀ sinθ · t −½gt²&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Contoh Soal&lt;/h3&gt;&lt;p&gt;v₀=20 m/s, θ=45°. Hitung jangkauan.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Simulasi&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;v₀&lt;/label&gt;&lt;input id='v0p' type='number' value='20'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;θ&lt;/label&gt;&lt;input id='angp' type='number' value='45'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;g&lt;/label&gt;&lt;input id='gp' type='number' value='10'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label&gt;Batas t&lt;/label&gt;&lt;input id='tmaxp' type='number' value='5'&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick='runPar()'&gt;Mulai&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class='sim' id='simp'&gt;&lt;div class='dot' id='dotp'&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;`;</p>
+<p class="p1">}</p>
+<p class="p1">function runPar(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let t=0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const v0=parseFloat(document.getElementById('v0p').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const ang=parseFloat(document.getElementById('angp').value)*Math.PI/180;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const g=parseFloat(document.getElementById('gp').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const tmax=parseFloat(document.getElementById('tmaxp').value);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const dot=document.getElementById('dotp');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const sim=document.getElementById('simp');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function loop(){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>t+=0.02;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const x=v0*Math.cos(ang)*t;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const y=v0*Math.sin(ang)*t-0.5*g*t*t;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>dot.style.left=(x*5)+'px';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>dot.style.top=(100-y*5)+'px';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(t&lt;tmax) requestAnimationFrame(loop);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>loop();</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
